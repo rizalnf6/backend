@@ -94,7 +94,7 @@
                     <div class="p-6">
                         <div class="rounded-md shadow">
                             <div class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                                Grafik Penjualan 6 Terakhhir
+                                Grafik Penjualan Selama Ini
                             </div>
                             <div id="graph"></div>
                         </div>
