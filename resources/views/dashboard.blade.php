@@ -62,17 +62,17 @@
                     <div class="p-3">
                         <div class="rounded-md shadow">
                             <div class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                                Penjualan Bulan Ini
+                                Penjualan Tahun Ini
                             </div>
-                            <h1 style="font-size: 20px; padding: 10px;">{{$bulan_ini}}</h1>
+                            <h1 style="font-size: 20px; padding: 10px;">{{$tahun_ini}}</h1>
                         </div>
                     </div>
                     <div class="p-3">
                         <div class="rounded-md shadow">
                             <div class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                                Penjualan Tahun Ini
+                                Penjualan Selama Ini
                             </div>
-                            <h1 style="font-size: 20px; padding: 10px;">{{$tahun_ini}}</h1>
+                            <h1 style="font-size: 20px; padding: 10px;">{{$semua}}</h1>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                     <div class="p-6">
                         <div class="rounded-md shadow">
                             <div class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                                Grafik Penjualan Selama Ini
+                                Grafik Penjualan Kemem
                             </div>
                             <div id="graph"></div>
                         </div>

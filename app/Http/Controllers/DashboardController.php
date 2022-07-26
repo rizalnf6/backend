@@ -15,10 +15,10 @@ class DashboardController extends Controller
 {
     public function index(Request $request)
     {
-        $data['hari_ini'] = $this->rupiah(Transaction::whereDate('transactions.created_at', Carbon::today())->sum('total_price'));
-        $data['bulan_ini'] = $this->rupiah(Transaction::whereMonth('transactions.created_at', '=', date('m'))->whereYear('transactions.created_at', '=', date('Y'))->sum('total_price'));
-        $data['tahun_ini'] = $this->rupiah(Transaction::whereYear('transactions.created_at', '=', date('Y'))->sum('total_price'));
-        $data['semua'] = $this->rupiah(Transaction::sum('total_price'));
+        $data['hari_ini'] = $this->rupiah(Transaction::whereDate('transactions.created_at', Carbon::today())->where('status', 'SUCCESS')->sum('total_price'));
+        $data['bulan_ini'] = $this->rupiah(Transaction::whereMonth('transactions.created_at', '=', date('m'))->whereYear('transactions.created_at', '=', date('Y'))->where('status', 'SUCCESS')->sum('total_price'));
+        $data['tahun_ini'] = $this->rupiah(Transaction::whereYear('transactions.created_at', '=', date('Y'))->where('status', 'SUCCESS')->sum('total_price'));
+        $data['semua'] = $this->rupiah(Transaction::where('status', 'SUCCESS')->sum('total_price'));
 
         $now = new DateTime( "5 months ago", new DateTimeZone('Asia/jakarta'));
         $interval = new DateInterval( 'P1M');
