@@ -21,6 +21,10 @@ use Laravel\Fortify\Http\Responses\LogoutResponse;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('tes', function() {
+    return "blok";
+});
+
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
    
     Route::name('dashboard.')->prefix('dashboard')->group(function () {
