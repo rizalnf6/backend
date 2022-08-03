@@ -76,7 +76,7 @@ class UserController extends Controller
                 'username' => ['required', 'string', 'max:255', 'unique:users'],
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
                 'phone' => ['nullable', 'string', 'max:255'],
-                'address' => ['nullable', 'string', 'max:255'],
+                'address' => ['required', 'string', 'max:255'],
                 'onesignal_player_id' => ['nullable', 'string', 'max:255'],
                 'password' => ['required', 'string', new Password]
             ]);
